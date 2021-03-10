@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(void) {
+
+  double valor[5];
+  int i;
+
+  for(i=0; i<5; i++) {
+    printf("Digite um valor: ");
+    scanf("%lf", &valor[i]);
+  }
+
+
+  for(i = 0; i < 5; i++) {
+
+    printf("\nValor: %lf - Memoria %p", valor[i], &valor[i]);
+  }
+}
